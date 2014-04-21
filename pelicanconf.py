@@ -4,7 +4,7 @@ from __future__ import unicode_literals
 
 AUTHOR = 'David Managuchi'
 SITENAME = 'red.dot.run'
-SITEURL = ''
+SITEURL = 'http://davem2.github.io/freebanana/'
 
 TIMEZONE = 'America/New_York'
 
@@ -34,4 +34,5 @@ DEFAULT_PAGINATION = 10
 #THEME = "tuxlite_zf"
 #THEME = "waterspill-en"
 #THEME = "foundation-default-colours"
-THEME = "dev-random2"
+#THEME = "zurb-F5-basic"
+THEME = "sneakyidea"
