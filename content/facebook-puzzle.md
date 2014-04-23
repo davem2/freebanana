@@ -1,9 +1,11 @@
 Title: Peaked Traffic
-Date: 2010-12-03 10:20
+Date: 2010-11-11 10:20
 Category: Python
 Tags: pelican, publishing
 Author: Alexis Metaireau
-Summary: Short version for index and feedsevery group of friends where each friensubmission fation about cliques, which are subgraphs that have the friendation about cliques, which are subgraphs that have the friend
+Summary: Short version for index and feedsevery group of friends where each 
+
+friensubmission fation about cliques, which are subgraphs that have the friendation about cliques, which are subgraphs that have the friend
 Last week I was working on Facebook's [peak traffic puzzle](http://www.facebook.com/careers/puzzles.php?puzzle_id=8),
 which was a pretty entertaining and informative exercise. The idea is 
 basically to parse a log file and generate an undirected graph that 
@@ -29,8 +31,6 @@ I wrote a naive implementation at first that looked something like
     $sparse.keys.each do |vertex|
         subgraph([vertex], $sparse[vertex])
     end
-    
-~
 
 This appeared to work pretty well on my tests, but continued to fail on 
 Facebook puzzle submission for some reason I couldn't track down at the 

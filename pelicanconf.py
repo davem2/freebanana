@@ -3,7 +3,7 @@
 from __future__ import unicode_literals
 
 AUTHOR = 'David Managuchi'
-SITENAME = 'Freebanana'
+SITENAME = "dblog"
 SITEURL = ''
 
 TIMEZONE = 'America/New_York'
@@ -32,7 +32,9 @@ DEFAULT_PAGINATION = 10
 
 #THEME = "subtle"
 #THEME = "tuxlite_zf"
-THEME = "waterspill-en"
+#THEME = "waterspill-en"
 #THEME = "foundation-default-colours"
 #THEME = "zurb-F5-basic"
 #THEME = "sneakyidea"
+
+THEME ="./dblog-theme"

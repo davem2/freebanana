@@ -1,9 +1,9 @@
 Title: Ramblings...
-Date: 2010-12-03 10:20
-Category: Python
+Date: 2010-03-03 10:20
+Category: Random
 Tags: pelican, publishing
 Author: Alexis Metaireau
-Summary: STickled pink on black eyed wafers. Middle management cut shady deals
+Summary: Tickled pink on black eyed wafers. Middle management cut shady deals
 
 .
 	Tickled pink on black eyed wafers
