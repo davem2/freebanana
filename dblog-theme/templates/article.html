@@ -3,12 +3,13 @@
 {% block content %}
 <article>
     <header>
-        <h3 class="article-title"><a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark"
-        title="Permalink to {{ article.title|striptags }}">{{ article.title}}</a></h3>
+		<div class="article-header">
+        <h3 class="article-title">{{ article.title}}</h3>
         {% include 'twitter.html' %}
+		{% include 'article_infos.html' %}
+		</div>
     </header>
 
-    {% include 'article_infos.html' %}
     {{ article.content }}
     {% include 'article_infos_bottom.html' %}
 

@@ -7,7 +7,7 @@
         {# First item #}
         {% if loop.first and not articles_page.has_previous() %}
             <article>
-				<div class='article-condensed'>
+				<div class='article-summary'>
                 {% include 'article_header.html' %}
                 {{ article.content }}{% include 'article_infos_bottom.html' %}{% include 'comments.html' %}
                 </div>

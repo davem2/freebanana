@@ -7,7 +7,7 @@
     <title>{% block title %}{{ SITENAME }}{%endblock%}</title>
 
     <link rel="stylesheet" href="{{ SITEURL }}/theme/css/normalize.css" />
-    <link rel="stylesheet" href="{{ SITEURL }}/theme/css/foundation.min.css" />
+    <link rel="stylesheet" href="{{ SITEURL }}/theme/css/foundation.css" />
     <link rel="stylesheet" href="{{ SITEURL }}/theme/css/style.css" />
     <link rel="stylesheet" href="{{ SITEURL }}/theme/css/pygments.css" />	
     <script src="{{ SITEURL }}/theme/js/custom.modernizr.js"></script>
@@ -49,11 +49,16 @@
 <div class="row">
 
     <!-- Main Blog Content -->
-    <div class="large-9 columns">
+    <div class="large-12 columns">
     {% block content %}{% endblock %}
     </div>
     <!-- End Main Content -->
 
+</div> <!-- End Main Content and Sidebar -->
+
+
+<!-- Footer -->
+<footer class="large-12 columns">
     <!-- Sidebar -->
     <aside class="large-3 columns">
         <h5 class="sidebar-title">Site</h5>
@@ -67,8 +72,10 @@
             <li><a href="{{ FEED_DOMAIN }}/{{ FEED_RSS }}" rel="alternate">RSS feed</a></li>
             {% endif %}
         </ul>
+    </aside> <!-- End Sidebar -->
 
-        {% if categories %}		
+    <aside class="large-3 columns">
+       {% if categories %}		
         <h5 class="sidebar-title">Categories</h5>
         <ul class="side-nav">
         {% for cat, null in categories %}
@@ -76,8 +83,10 @@
         {% endfor %}   
         </ul>
         {% endif %}
+    </aside> <!-- End Sidebar -->
 
-        {% if LINKS %}
+    <aside class="large-3 columns">
+       {% if LINKS %}
         <h5 class="sidebar-title">Links</h5>
         <ul class="side-nav">
         {% for name, link in LINKS %}
@@ -85,8 +94,10 @@
         {% endfor %}
         </ul>
         {% endif %}
+    </aside> <!-- End Sidebar -->
 		
-        {% if SOCIAL %}
+    <aside class="large-3 columns">
+       {% if SOCIAL %}
         <h5 class="sidebar-title">Social</h5>
         <ul class="side-nav">
         {% for name, link in SOCIAL %}
@@ -94,20 +105,15 @@
         {% endfor %}
         </ul>
         {% endif %}
-
     </aside> <!-- End Sidebar -->
 
-</div> <!-- End Main Content and Sidebar -->
 
-
-<!-- Footer -->
-<footer class="row">
-    <div class="large-12 columns">
+ <!--
         <hr />
         <div class="row">
             <div class="large-6 columns">
-              <!--                  <p>{{ SITENAME }} by {{ AUTHOR }}</p> -->
+				<p>{{ SITENAME }} by {{ AUTHOR }} - Powered by <a href"http://blog.getpelican.com">pelican</a></p> 
             </div>
             </div>
-    </div>
+ -->
 </footer>
