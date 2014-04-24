@@ -1,10 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Freebanana</title><link href="http://davem2.github.io/freebanana/" rel="alternate"></link><link href="http://davem2.github.io/freebanana/feeds/all.atom.xml" rel="self"></link><id>http://davem2.github.io/freebanana/</id><updated>2010-12-03T10:20:00-05:00</updated><entry><title>My super title</title><link href="http://davem2.github.io/freebanana/my-super-post.html" rel="alternate"></link><updated>2010-12-03T10:20:00-05:00</updated><author><name>Alexis Metaireau</name></author><id>tag:davem2.github.io/freebanana,2010-12-03:my-super-post.html</id><summary type="html">&lt;p&gt;This is the content of my super blog post.&lt;/p&gt;
-&lt;h1&gt;WHen is it ok to give a shit?&lt;/h1&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>dblog</title><link href="http://davem2.github.io/freebanana/" rel="alternate"></link><link href="http://davem2.github.io/freebanana/feeds/all.atom.xml" rel="self"></link><id>http://davem2.github.io/freebanana/</id><updated>2014-04-23T00:00:00-04:00</updated><entry><title>Hello world!</title><link href="http://davem2.github.io/freebanana/hello-world.html" rel="alternate"></link><updated>2014-04-23T00:00:00-04:00</updated><author><name>David Maranhao</name></author><id>tag:davem2.github.io/freebanana,2014-04-23:hello-world.html</id><summary type="html">&lt;p&gt;So I've finally got around to putting up a personal website.. and somehow you've stumbled upon it.  Welcome!  &lt;/p&gt;
+&lt;h3&gt;Deja-vu&lt;/h3&gt;
+&lt;p&gt;It's been about 10 years since my previous personal website "Dave's Programming Page" went down with the fall of geocities.  The web was a lot different back then; the word blog had yet to be invented (they were called Homepages) and animated "Under Construction" GIFs were cutting edge.&lt;/p&gt;
+&lt;p&gt;Here are some screenshots of my old site in 2002:&lt;/p&gt;
+&lt;p&gt;&lt;img src="/images/dpp-coding1-0.png" alt="Dave's Programming Page #1" style="width: 44%; vertical-align:top;padding: 0.5em;"/&gt;
+&lt;img src="/images/dpp-music.png" alt="Dave's Programming Page #1" style="width: 44%; vertical-align:top;padding: 0.5em;"/&gt;&lt;/p&gt;
+&lt;h3&gt;Whachutalkinbout?&lt;/h3&gt;
+&lt;p&gt;For the most part this site will be a recreation of the old Dave's programming page with a heavy focus on personal projects.  Any articles / tutorial I write will most likely be on programming / computer related things.  Some non-computer related rants and randomness may make it in there as well.  &lt;/p&gt;
+&lt;h3&gt;Whyudodat?&lt;/h3&gt;
+&lt;p&gt;Here's what I hope to accomplish through this site:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;something is fishy&lt;/li&gt;
-&lt;li&gt;on an empty stomach&lt;/li&gt;
-&lt;/ul&gt;</summary><category term="pelican"></category><category term="publishing"></category></entry><entry><title>Peaked Traffic</title><link href="http://davem2.github.io/freebanana/peaked-traffic.html" rel="alternate"></link><updated>2010-12-03T10:20:00-05:00</updated><author><name>Alexis Metaireau</name></author><id>tag:davem2.github.io/freebanana,2010-12-03:peaked-traffic.html</id><summary type="html">&lt;p&gt;Last week I was working on Facebook's &lt;a href="http://www.facebook.com/careers/puzzles.php?puzzle_id=8"&gt;peak traffic puzzle&lt;/a&gt;,
+&lt;li&gt;Share my creations with the world (software, music, art, ...)&lt;/li&gt;
+&lt;li&gt;Document various projects I'm working on to serve as a tutorial to others and notes for myself.&lt;/li&gt;
+&lt;li&gt;Exercise my writing ability and hopefully improve.&lt;/li&gt;
+&lt;li&gt;Never ending web development.  I can tinker all I like.&lt;/li&gt;
+&lt;/ul&gt;</summary><category term="rant"></category></entry><entry><title>Peaked Traffic</title><link href="http://davem2.github.io/freebanana/peaked-traffic.html" rel="alternate"></link><updated>2010-12-11T10:20:00-05:00</updated><author><name>Alexis Metaireau</name></author><id>tag:davem2.github.io/freebanana,2010-12-11:peaked-traffic.html</id><summary type="html">&lt;p&gt;friensubmission fation about cliques, which are subgraphs that have the friendation about cliques, which are subgraphs that have the friend
+Last week I was working on Facebook's &lt;a href="http://www.facebook.com/careers/puzzles.php?puzzle_id=8"&gt;peak traffic puzzle&lt;/a&gt;,
 which was a pretty entertaining and informative exercise. The idea is 
 basically to parse a log file and generate an undirected graph that 
 represents mutual friendships between Facebook users. Then you are to 
@@ -30,7 +41,6 @@ with every other person in the group. &lt;/p&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;p&gt;~&lt;/p&gt;
 &lt;p&gt;This appeared to work pretty well on my tests, but continued to fail on 
 Facebook puzzle submission for some reason I couldn't track down at the 
 time. In my frustration, I went to the internet. Turns out, this problem 
@@ -133,7 +143,64 @@ Here are the results after finally getting my naive solution running. &lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;Here are my two &lt;a href="https://github.com/vincentwoo/rubycode/blob/master/peaktraffic"&gt;solutions&lt;/a&gt;
 to this problem. The codepath that executes the Bron Kerbosch algorithm is not active but
-fairly obvious. They both work.&lt;/p&gt;</summary><category term="pelican"></category><category term="publishing"></category></entry><entry><title>Ramblings...</title><link href="http://davem2.github.io/freebanana/ramblings.html" rel="alternate"></link><updated>2010-12-03T10:20:00-05:00</updated><author><name>Alexis Metaireau</name></author><id>tag:davem2.github.io/freebanana,2010-12-03:ramblings.html</id><summary type="html">&lt;p&gt;.
+fairly obvious. They both work.&lt;/p&gt;</summary><category term="pelican"></category><category term="publishing"></category></entry><entry><title>RaspBMC setup</title><link href="http://davem2.github.io/freebanana/raspbmc-setup.html" rel="alternate"></link><updated>2010-11-03T10:20:00-04:00</updated><author><name>David Maranhao</name></author><id>tag:davem2.github.io/freebanana,2010-11-03:raspbmc-setup.html</id><summary type="html">&lt;p&gt;~&lt;/p&gt;
+&lt;h3&gt;Installing raspbmc&lt;/h3&gt;
+&lt;h3&gt;Setting up wifi&lt;/h3&gt;
+&lt;p&gt;I've finally gotten around to purchasing a wireless adapter for my raspberry pi and it turned out that set up wasn't as bad as I expected.  For about $6 on eBay, I got a generic 802.11n/g/b USB Wifi adapter (uses RalinkTBD chipset)&lt;/p&gt;
+&lt;p&gt;(image goes here)&lt;/p&gt;
+&lt;p&gt;Before buying an adapter make sure it's verified to work with the raspberry pi &lt;a href="http://elinux.org/RPi_VerifiedPeripherals#USB_WiFi_Adapters" title="Optional Title"&gt;here&lt;/a&gt;&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="err"&gt;$&lt;/span&gt; &lt;span class="n"&gt;ls&lt;/span&gt; &lt;span class="n"&gt;date&lt;/span&gt;&lt;span class="o"&gt;+%&lt;/span&gt;&lt;span class="n"&gt;h&lt;/span&gt; &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;wc&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;l&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Install usb adapter and boot raspbmc&lt;/p&gt;
+&lt;p&gt;Start an SSH session with the raspberry pi&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="err"&gt;$&lt;/span&gt; &lt;span class="n"&gt;ssh&lt;/span&gt; &lt;span class="n"&gt;pi&lt;/span&gt;&lt;span class="err"&gt;@&lt;/span&gt;&lt;span class="mf"&gt;192.168.2.211&lt;/span&gt;
+&lt;span class="err"&gt;$&lt;/span&gt; &lt;span class="n"&gt;pi&lt;/span&gt;&lt;span class="err"&gt;@&lt;/span&gt;&lt;span class="mf"&gt;192.168.2.211&lt;/span&gt;&lt;span class="err"&gt;&amp;#39;&lt;/span&gt;&lt;span class="n"&gt;s&lt;/span&gt; &lt;span class="n"&gt;password&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="n"&gt;raspberry&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Check that your adapter was detected using the lsub command&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="n"&gt;pi&lt;/span&gt;&lt;span class="err"&gt;@&lt;/span&gt;&lt;span class="n"&gt;raspbmc&lt;/span&gt;&lt;span class="o"&gt;:~&lt;/span&gt;&lt;span class="err"&gt;$&lt;/span&gt; &lt;span class="n"&gt;lsusb&lt;/span&gt;
+
+&lt;span class="n"&gt;Bus&lt;/span&gt; &lt;span class="mo"&gt;001&lt;/span&gt; &lt;span class="n"&gt;Device&lt;/span&gt; &lt;span class="mo"&gt;002&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="n"&gt;ID&lt;/span&gt; &lt;span class="mo"&gt;0424&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="mi"&gt;9512&lt;/span&gt; &lt;span class="n"&gt;Standard&lt;/span&gt; &lt;span class="n"&gt;Microsystems&lt;/span&gt; &lt;span class="n"&gt;Corp&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt; 
+&lt;span class="n"&gt;Bus&lt;/span&gt; &lt;span class="mo"&gt;001&lt;/span&gt; &lt;span class="n"&gt;Device&lt;/span&gt; &lt;span class="mo"&gt;001&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="n"&gt;ID&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="n"&gt;d6b&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="mo"&gt;0002&lt;/span&gt; &lt;span class="n"&gt;Linux&lt;/span&gt; &lt;span class="n"&gt;Foundation&lt;/span&gt; &lt;span class="mf"&gt;2.0&lt;/span&gt; &lt;span class="n"&gt;root&lt;/span&gt; &lt;span class="n"&gt;hub&lt;/span&gt;
+&lt;span class="n"&gt;Bus&lt;/span&gt; &lt;span class="mo"&gt;001&lt;/span&gt; &lt;span class="n"&gt;Device&lt;/span&gt; &lt;span class="mo"&gt;003&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="n"&gt;ID&lt;/span&gt; &lt;span class="mo"&gt;0424&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="n"&gt;ec00&lt;/span&gt; &lt;span class="n"&gt;Standard&lt;/span&gt; &lt;span class="n"&gt;Microsystems&lt;/span&gt; &lt;span class="n"&gt;Corp&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt; 
+&lt;span class="n"&gt;Bus&lt;/span&gt; &lt;span class="mo"&gt;001&lt;/span&gt; &lt;span class="n"&gt;Device&lt;/span&gt; &lt;span class="mo"&gt;004&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="n"&gt;ID&lt;/span&gt; &lt;span class="mf"&gt;148f&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="mi"&gt;5370&lt;/span&gt; &lt;span class="n"&gt;Ralink&lt;/span&gt; &lt;span class="n"&gt;Technology&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;Corp&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt; &lt;span class="n"&gt;RT5370&lt;/span&gt; &lt;span class="n"&gt;Wireless&lt;/span&gt; &lt;span class="n"&gt;Adapter&lt;/span&gt;
+&lt;span class="n"&gt;Bus&lt;/span&gt; &lt;span class="mo"&gt;001&lt;/span&gt; &lt;span class="n"&gt;Device&lt;/span&gt; &lt;span class="mo"&gt;005&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="n"&gt;ID&lt;/span&gt; &lt;span class="mo"&gt;046&lt;/span&gt;&lt;span class="n"&gt;d&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="n"&gt;c316&lt;/span&gt; &lt;span class="n"&gt;Logitech&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;Inc&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt; &lt;span class="n"&gt;HID&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;Compliant&lt;/span&gt; &lt;span class="n"&gt;Keyboard&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;The firmware-ralink package is needed and can be installed through apt-get&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="n"&gt;pi&lt;/span&gt;&lt;span class="err"&gt;@&lt;/span&gt;&lt;span class="n"&gt;raspbmc&lt;/span&gt;&lt;span class="o"&gt;:~&lt;/span&gt;&lt;span class="err"&gt;$&lt;/span&gt; &lt;span class="n"&gt;sudo&lt;/span&gt; &lt;span class="n"&gt;apt&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;get&lt;/span&gt; &lt;span class="n"&gt;update&lt;/span&gt;
+&lt;span class="n"&gt;pi&lt;/span&gt;&lt;span class="err"&gt;@&lt;/span&gt;&lt;span class="n"&gt;raspbmc&lt;/span&gt;&lt;span class="o"&gt;:~&lt;/span&gt;&lt;span class="err"&gt;$&lt;/span&gt; &lt;span class="n"&gt;sudo&lt;/span&gt; &lt;span class="n"&gt;apt&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;get&lt;/span&gt; &lt;span class="n"&gt;install&lt;/span&gt; &lt;span class="n"&gt;firmware&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;ralink&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Confirm wlan0 exists&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="n"&gt;pi&lt;/span&gt;&lt;span class="err"&gt;@&lt;/span&gt;&lt;span class="n"&gt;raspbmc&lt;/span&gt;&lt;span class="o"&gt;:~&lt;/span&gt;&lt;span class="err"&gt;$&lt;/span&gt; &lt;span class="n"&gt;ifconfig&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h3&gt;Remote control&lt;/h3&gt;
+&lt;h4&gt;Android XBMC remote&lt;/h4&gt;
+&lt;p&gt;The &lt;a href="http://play.google.com/store/apps/details?id=org.xbmc.android.remote&amp;amp;hl=en"&gt;Official XBMC Remote by Team-XBMC&lt;/a&gt; is an android app that turns your phone into full feature remote control for XBMC.  Super useful, easy to set up and free.. this app is great! &lt;/p&gt;
+&lt;h5&gt;Here's how to set things up&lt;/h5&gt;
+&lt;ul&gt;
+&lt;li&gt;Download and install &lt;a href="http://play.google.com/store/apps/details?id=org.xbmc.android.remote&amp;amp;hl=en"&gt;Official XBMC Remote by Team-XBMC&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Start the app on your android device and enter Settings-&amp;gt;Manage XBMC Hosts&lt;/li&gt;
+&lt;li&gt;Add host
+    Name of this instance:
+    Host or IP address:
+    HTTP API port:
+    Username:
+    Password:
+    EventServer port:&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4&gt;IR remote&lt;/h4&gt;
+&lt;p&gt;TBD&lt;/p&gt;
+&lt;p&gt;https://play.google.com/store/apps/details?id=org.leetzone.android.yatsewidgetfree&amp;amp;feature=related_apps
+https://play.google.com/store/apps/details?id=ch.berard.xbmcremotebeta&lt;/p&gt;</summary><category term="raspberrypi"></category><category term="diy"></category><category term="tutorial"></category></entry><entry><title>Ramblings...</title><link href="http://davem2.github.io/freebanana/ramblings.html" rel="alternate"></link><updated>2010-03-03T10:20:00-05:00</updated><author><name>Alexis Metaireau</name></author><id>tag:davem2.github.io/freebanana,2010-03-03:ramblings.html</id><summary type="html">&lt;p&gt;.
     Tickled pink on black eyed wafers
     Calling home to familiar faces
     Broken tongues of cajun spoken

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>dblog</title><link href="http://davem2.github.io/freebanana/" rel="alternate"></link><link href="http://davem2.github.io/freebanana/feeds/rant.atom.xml" rel="self"></link><id>http://davem2.github.io/freebanana/</id><updated>2014-04-23T00:00:00-04:00</updated><entry><title>Hello world!</title><link href="http://davem2.github.io/freebanana/hello-world.html" rel="alternate"></link><updated>2014-04-23T00:00:00-04:00</updated><author><name>David Maranhao</name></author><id>tag:davem2.github.io/freebanana,2014-04-23:hello-world.html</id><summary type="html">&lt;p&gt;So I've finally got around to putting up a personal website.. and somehow you've stumbled upon it.  Welcome!  &lt;/p&gt;
+&lt;h3&gt;Deja-vu&lt;/h3&gt;
+&lt;p&gt;It's been about 10 years since my previous personal website "Dave's Programming Page" went down with the fall of geocities.  The web was a lot different back then; the word blog had yet to be invented (they were called Homepages) and animated "Under Construction" GIFs were cutting edge.&lt;/p&gt;
+&lt;p&gt;Here are some screenshots of my old site in 2002:&lt;/p&gt;
+&lt;p&gt;&lt;img src="/images/dpp-coding1-0.png" alt="Dave's Programming Page #1" style="width: 44%; vertical-align:top;padding: 0.5em;"/&gt;
+&lt;img src="/images/dpp-music.png" alt="Dave's Programming Page #1" style="width: 44%; vertical-align:top;padding: 0.5em;"/&gt;&lt;/p&gt;
+&lt;h3&gt;Whachutalkinbout?&lt;/h3&gt;
+&lt;p&gt;For the most part this site will be a recreation of the old Dave's programming page with a heavy focus on personal projects.  Any articles / tutorial I write will most likely be on programming / computer related things.  Some non-computer related rants and randomness may make it in there as well.  &lt;/p&gt;
+&lt;h3&gt;Whyudodat?&lt;/h3&gt;
+&lt;p&gt;Here's what I hope to accomplish through this site:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Share my creations with the world (software, music, art, ...)&lt;/li&gt;
+&lt;li&gt;Document various projects I'm working on to serve as a tutorial to others and notes for myself.&lt;/li&gt;
+&lt;li&gt;Exercise my writing ability and hopefully improve.&lt;/li&gt;
+&lt;li&gt;Never ending web development.  I can tinker all I like.&lt;/li&gt;
+&lt;/ul&gt;</summary><category term="rant"></category></entry></feed>

@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8" />
+    <!-- Set the viewport width to device width for mobile -->
+    <meta name="viewport" content="width=device-width" />
+
+    <title>dblog - diy, tutorial</title>
+
+    <link rel="stylesheet" href="http://davem2.github.io/freebanana/theme/css/normalize.css" />
+    <link rel="stylesheet" href="http://davem2.github.io/freebanana/theme/css/foundation.css" />
+    <link rel="stylesheet" href="http://davem2.github.io/freebanana/theme/css/style.css" />
+    <link rel="stylesheet" href="http://davem2.github.io/freebanana/theme/css/pygments.css" />	
+    <script src="http://davem2.github.io/freebanana/theme/js/custom.modernizr.js"></script>
+</head>
+
+<body>
+
+<!-- Nav Bar -->
+<nav>
+<div class="top-bar">
+<div class="row">
+    <div class="large-9 large-centered columns">
+	    <h1><a href="http://davem2.github.io/freebanana">dblog</a></h1>
+    </div>
+</div>
+</div>
+
+<!-- Show menu items and pages -->
+<div class="row">
+<div class="large-9 columns">
+    <ul class="button-group navigation">
+
+    </ul>
+</div>
+</div>
+</nav>
+<!-- End Nav -->
+
+
+<!-- Main Page Content and Sidebar -->
+<div class="row">
+
+    <!-- Main Blog Content -->
+    <div class="large-12 columns">
+        
+        
+
+            <article>
+				<div class='article-summary'>
+
+<div class="article-header">
+<a href="http://davem2.github.io/freebanana/raspbmc-setup.html"><h3 class="article-title">RaspBMC setup</h3></a>                
+<h6 class="subheader" title="2010-11-03T10:20:00">Wed 03 November 2010
+</h6>
+</div>
+
+
+                <p>~</p>
+<h3>Installing raspbmc</h3>
+<h3>Setting up wifi</h3>
+<p>I've finally gotten around to purchasing a wireless adapter for my raspberry pi and it turned out that set up wasn't as bad as I expected.  For about $6 on eBay, I got a generic 802.11n/g/b USB Wifi adapter (uses RalinkTBD chipset)</p>
+<p>(image goes here)</p>
+<p>Before buying an adapter make sure it's verified to work with the raspberry pi <a href="http://elinux.org/RPi_VerifiedPeripherals#USB_WiFi_Adapters" title="Optional Title">here</a></p>
+<div class="highlight"><pre><span class="err">$</span> <span class="n">ls</span> <span class="n">date</span><span class="o">+%</span><span class="n">h</span> <span class="o">|</span> <span class="n">wc</span> <span class="o">-</span><span class="n">l</span>
+</pre></div>
+
+
+<p>Install usb adapter and boot raspbmc</p>
+<p>Start an SSH session with the raspberry pi</p>
+<div class="highlight"><pre><span class="err">$</span> <span class="n">ssh</span> <span class="n">pi</span><span class="err">@</span><span class="mf">192.168.2.211</span>
+<span class="err">$</span> <span class="n">pi</span><span class="err">@</span><span class="mf">192.168.2.211</span><span class="err">&#39;</span><span class="n">s</span> <span class="n">password</span><span class="o">:</span> <span class="n">raspberry</span>
+</pre></div>
+
+
+<p>Check that your adapter was detected using the lsub command</p>
+<div class="highlight"><pre><span class="n">pi</span><span class="err">@</span><span class="n">raspbmc</span><span class="o">:~</span><span class="err">$</span> <span class="n">lsusb</span>
+
+<span class="n">Bus</span> <span class="mo">001</span> <span class="n">Device</span> <span class="mo">002</span><span class="o">:</span> <span class="n">ID</span> <span class="mo">0424</span><span class="o">:</span><span class="mi">9512</span> <span class="n">Standard</span> <span class="n">Microsystems</span> <span class="n">Corp</span><span class="p">.</span> 
+<span class="n">Bus</span> <span class="mo">001</span> <span class="n">Device</span> <span class="mo">001</span><span class="o">:</span> <span class="n">ID</span> <span class="mi">1</span><span class="n">d6b</span><span class="o">:</span><span class="mo">0002</span> <span class="n">Linux</span> <span class="n">Foundation</span> <span class="mf">2.0</span> <span class="n">root</span> <span class="n">hub</span>
+<span class="n">Bus</span> <span class="mo">001</span> <span class="n">Device</span> <span class="mo">003</span><span class="o">:</span> <span class="n">ID</span> <span class="mo">0424</span><span class="o">:</span><span class="n">ec00</span> <span class="n">Standard</span> <span class="n">Microsystems</span> <span class="n">Corp</span><span class="p">.</span> 
+<span class="n">Bus</span> <span class="mo">001</span> <span class="n">Device</span> <span class="mo">004</span><span class="o">:</span> <span class="n">ID</span> <span class="mf">148f</span><span class="o">:</span><span class="mi">5370</span> <span class="n">Ralink</span> <span class="n">Technology</span><span class="p">,</span> <span class="n">Corp</span><span class="p">.</span> <span class="n">RT5370</span> <span class="n">Wireless</span> <span class="n">Adapter</span>
+<span class="n">Bus</span> <span class="mo">001</span> <span class="n">Device</span> <span class="mo">005</span><span class="o">:</span> <span class="n">ID</span> <span class="mo">046</span><span class="n">d</span><span class="o">:</span><span class="n">c316</span> <span class="n">Logitech</span><span class="p">,</span> <span class="n">Inc</span><span class="p">.</span> <span class="n">HID</span><span class="o">-</span><span class="n">Compliant</span> <span class="n">Keyboard</span>
+</pre></div>
+
+
+<p>The firmware-ralink package is needed and can be installed through apt-get</p>
+<div class="highlight"><pre><span class="n">pi</span><span class="err">@</span><span class="n">raspbmc</span><span class="o">:~</span><span class="err">$</span> <span class="n">sudo</span> <span class="n">apt</span><span class="o">-</span><span class="n">get</span> <span class="n">update</span>
+<span class="n">pi</span><span class="err">@</span><span class="n">raspbmc</span><span class="o">:~</span><span class="err">$</span> <span class="n">sudo</span> <span class="n">apt</span><span class="o">-</span><span class="n">get</span> <span class="n">install</span> <span class="n">firmware</span><span class="o">-</span><span class="n">ralink</span>
+</pre></div>
+
+
+<p>Confirm wlan0 exists</p>
+<div class="highlight"><pre><span class="n">pi</span><span class="err">@</span><span class="n">raspbmc</span><span class="o">:~</span><span class="err">$</span> <span class="n">ifconfig</span>
+</pre></div>
+
+
+<h3>Remote control</h3>
+<h4>Android XBMC remote</h4>
+<p>The <a href="http://play.google.com/store/apps/details?id=org.xbmc.android.remote&amp;hl=en">Official XBMC Remote by Team-XBMC</a> is an android app that turns your phone into full feature remote control for XBMC.  Super useful, easy to set up and free.. this app is great! </p>
+<h5>Here's how to set things up</h5>
+<ul>
+<li>Download and install <a href="http://play.google.com/store/apps/details?id=org.xbmc.android.remote&amp;hl=en">Official XBMC Remote by Team-XBMC</a></li>
+<li>Start the app on your android device and enter Settings-&gt;Manage XBMC Hosts</li>
+<li>Add host
+    Name of this instance:
+    Host or IP address:
+    HTTP API port:
+    Username:
+    Password:
+    EventServer port:</li>
+</ul>
+<h4>IR remote</h4>
+<p>TBD</p>
+<p>https://play.google.com/store/apps/details?id=org.leetzone.android.yatsewidgetfree&amp;feature=related_apps
+https://play.google.com/store/apps/details?id=ch.berard.xbmcremotebeta</p><p class="subheader">Category: <a href="http://davem2.github.io/freebanana/category/diy-tutorial.html">diy, tutorial</a>
+
+    Tagged: 
+    <a href="http://davem2.github.io/freebanana/tag/raspberrypi.html">raspberrypi </a>
+    <a href="http://davem2.github.io/freebanana/tag/diy.html">diy </a>
+    <a href="http://davem2.github.io/freebanana/tag/tutorial.html">tutorial </a>
+</p>
+
+
+
+                </div>
+           </article>
+
+<div class="pagination-centered">
+<h6 class="subheader">Page 1 of 1</h6>
+
+<p>
+
+</p>
+</div>
+
+
+
+            <!-- /#posts-list -->
+
+    </div>
+    <!-- End Main Content -->
+
+</div> <!-- End Main Content and Sidebar -->
+
+
+<!-- Footer -->
+<footer class="large-12 columns">
+    <!-- Sidebar -->
+    <aside class="large-3 columns">
+        <h5 class="sidebar-title">Site</h5>
+        <ul class="side-nav">
+            <li><a href="http://davem2.github.io/freebanana/archives.html">Archives</a>
+            <li><a href="http://davem2.github.io/freebanana/tags.html">Tags</a>
+        </ul>
+    </aside> <!-- End Sidebar -->
+
+    <aside class="large-3 columns">
+		
+        <h5 class="sidebar-title">Categories</h5>
+        <ul class="side-nav">
+            <li><a href="http://davem2.github.io/freebanana/category/diy-tutorial.html">diy, tutorial</a></li>
+            <li><a href="http://davem2.github.io/freebanana/category/python.html">Python</a></li>
+            <li><a href="http://davem2.github.io/freebanana/category/random.html">Random</a></li>
+            <li><a href="http://davem2.github.io/freebanana/category/rant.html">rant</a></li>
+   
+        </ul>
+    </aside> <!-- End Sidebar -->
+
+    <aside class="large-3 columns">
+        <h5 class="sidebar-title">Links</h5>
+        <ul class="side-nav">
+            <li><a href="http://getpelican.com/">Pelican</a></li>
+            <li><a href="http://python.org/">Python.org</a></li>
+            <li><a href="http://jinja.pocoo.org/">Jinja2</a></li>
+            <li><a href="#">You can modify those links in your config file</a></li>
+        </ul>
+    </aside> <!-- End Sidebar -->
+		
+    <aside class="large-3 columns">
+        <h5 class="sidebar-title">Social</h5>
+        <ul class="side-nav">
+            <li><a href="#">You can add links in your config file</a></li>
+            <li><a href="#">Another social link</a></li>
+        </ul>
+    </aside> <!-- End Sidebar -->
+
+
+ <!--
+        <hr />
+        <div class="row">
+            <div class="large-6 columns">
+				<p>dblog by David Managuchi - Powered by <a href"http://blog.getpelican.com">pelican</a></p> 
+            </div>
+            </div>
+ -->
+</footer>

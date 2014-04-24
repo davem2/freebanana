@@ -4,7 +4,7 @@
     <!-- Set the viewport width to device width for mobile -->
     <meta name="viewport" content="width=device-width" />
 
-    <title>dblog - Python</title>
+    <title>dblog - Random</title>
 
     <link rel="stylesheet" href="http://davem2.github.io/freebanana/theme/css/normalize.css" />
     <link rel="stylesheet" href="http://davem2.github.io/freebanana/theme/css/foundation.css" />
@@ -49,39 +49,26 @@
 				<div class='article-summary'>
 
 <div class="article-header">
-<a href="http://davem2.github.io/freebanana/peaked-traffic.html"><h3 class="article-title">Peaked Traffic</h3></a>                
-<h6 class="subheader" title="2010-12-11T10:20:00">Sat 11 December 2010
+<a href="http://davem2.github.io/freebanana/ramblings.html"><h3 class="article-title">Ramblings...</h3></a>                
+<h6 class="subheader" title="2010-03-03T10:20:00">Wed 03 March 2010
 </h6>
 </div>
 
 
-                <p>friensubmission fation about cliques, which are subgraphs that have the friendation about cliques, which are subgraphs that have the friend
-Last week I was working on Facebook's <a href="http://www.facebook.com/careers/puzzles.php?puzzle_id=8">peak traffic puzzle</a>,
-which was a pretty entertaining and informative exercise. The idea is 
-basically to parse a log file and generate an undirected graph that 
-represents mutual friendships between Facebook users. Then you are to 
-find every group of friends where each friend in the group is friends 
-with every other person in the group. </p>
-<p>I wrote a naive implementation at first that looked something like</p>
-<div class="highlight"><pre><span class="cp"># $seen is a hash to menoize previously seen sets</span>
-<span class="cp"># $sparse is a hash of usernames to a list of neighboring usernames</span>
-<span class="cp"># $set is the list of output clusters</span>
-
-<span class="err">$</span><span class="n">seen</span> <span class="o">=</span> <span class="p">{}</span>
-<span class="n">def</span> <span class="n">subgraph</span><span class="p">(</span><span class="n">set</span><span class="p">,</span> <span class="n">adj</span><span class="p">)</span>
-    <span class="n">hash</span> <span class="o">=</span> <span class="p">(</span><span class="n">set</span> <span class="o">+</span> <span class="n">adj</span><span class="p">).</span><span class="n">sort</span>
-    <span class="k">return</span> <span class="k">if</span> <span class="err">$</span><span class="n">seen</span><span class="p">[</span><span class="n">hash</span><span class="p">]</span>
-    <span class="err">$</span><span class="n">sets</span><span class="p">.</span><span class="n">push</span> <span class="n">set</span><span class="p">.</span><span class="n">sort</span><span class="p">.</span><span class="n">join</span><span class="p">(</span><span class="s">&quot;, &quot;</span><span class="p">)</span> <span class="k">if</span> <span class="n">adj</span><span class="p">.</span><span class="n">empty</span><span class="o">?</span> <span class="n">and</span> <span class="n">set</span><span class="p">.</span><span class="n">size</span> <span class="o">&gt;</span> <span class="mi">2</span>
-    <span class="n">adj</span><span class="p">.</span><span class="n">each</span> <span class="p">{</span><span class="o">|</span><span class="n">node</span><span class="o">|</span> <span class="n">subgraph</span><span class="p">(</span><span class="n">set</span> <span class="o">+</span> <span class="p">[</span><span class="n">node</span><span class="p">],</span> <span class="err">$</span><span class="n">sparse</span><span class="p">[</span><span class="n">node</span><span class="p">]</span> <span class="o">&amp;</span> <span class="n">adj</span><span class="p">)}</span>
-    <span class="err">$</span><span class="n">seen</span><span class="p">[</span><span class="n">hash</span><span class="p">]</span> <span class="o">=</span> <span class="nb">true</span>
-<span class="n">end</span>
-
-<span class="err">$</span><span class="n">sparse</span><span class="p">.</span><span class="n">keys</span><span class="p">.</span><span class="n">each</span> <span class="k">do</span> <span class="o">|</span><span class="n">vertex</span><span class="o">|</span>
-    <span class="n">subgraph</span><span class="p">([</span><span class="n">vertex</span><span class="p">],</span> <span class="err">$</span><span class="n">sparse</span><span class="p">[</span><span class="n">vertex</span><span class="p">])</span>
-<span class="n">end</span>
+                <p>.
+    Tickled pink on black eyed wafers
+    Calling home to familiar faces
+    Broken tongues of cajun spoken
+    Goverment collusion BP sponsored</p>
+<div class="highlight"><pre><span class="n">Dolphin</span> <span class="n">stillbornes</span>
+<span class="n">Poison</span> <span class="n">seafood</span>
+<span class="n">Broken</span> <span class="n">system</span> <span class="n">criminals</span> <span class="n">rampant</span>
+<span class="n">Middle</span> <span class="n">management</span> <span class="n">cut</span> <span class="n">shady</span> <span class="n">deals</span>
+<span class="n">Led</span>
 </pre></div>
 
 
+<p>~</p>
 <p>This appeared to work pretty well on my tests, but continued to fail on 
 Facebook puzzle submission for some reason I couldn't track down at the 
 time. In my frustration, I went to the internet. Turns out, this problem 
@@ -184,7 +171,7 @@ Here are the results after finally getting my naive solution running. </p>
 </blockquote>
 <p>Here are my two <a href="https://github.com/vincentwoo/rubycode/blob/master/peaktraffic">solutions</a>
 to this problem. The codepath that executes the Bron Kerbosch algorithm is not active but
-fairly obvious. They both work.</p><p class="subheader">Category: <a href="http://davem2.github.io/freebanana/category/python.html">Python</a>
+fairly obvious. They both work.</p><p class="subheader">Category: <a href="http://davem2.github.io/freebanana/category/random.html">Random</a>
 
     Tagged: 
     <a href="http://davem2.github.io/freebanana/tag/pelican.html">pelican </a>

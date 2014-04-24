@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>dblog</title><link href="http://davem2.github.io/freebanana/" rel="alternate"></link><link href="http://davem2.github.io/freebanana/feeds/diy-tutorial.atom.xml" rel="self"></link><id>http://davem2.github.io/freebanana/</id><updated>2010-11-03T10:20:00-04:00</updated><entry><title>RaspBMC setup</title><link href="http://davem2.github.io/freebanana/raspbmc-setup.html" rel="alternate"></link><updated>2010-11-03T10:20:00-04:00</updated><author><name>David Maranhao</name></author><id>tag:davem2.github.io/freebanana,2010-11-03:raspbmc-setup.html</id><summary type="html">&lt;p&gt;~&lt;/p&gt;
+&lt;h3&gt;Installing raspbmc&lt;/h3&gt;
+&lt;h3&gt;Setting up wifi&lt;/h3&gt;
+&lt;p&gt;I've finally gotten around to purchasing a wireless adapter for my raspberry pi and it turned out that set up wasn't as bad as I expected.  For about $6 on eBay, I got a generic 802.11n/g/b USB Wifi adapter (uses RalinkTBD chipset)&lt;/p&gt;
+&lt;p&gt;(image goes here)&lt;/p&gt;
+&lt;p&gt;Before buying an adapter make sure it's verified to work with the raspberry pi &lt;a href="http://elinux.org/RPi_VerifiedPeripherals#USB_WiFi_Adapters" title="Optional Title"&gt;here&lt;/a&gt;&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="err"&gt;$&lt;/span&gt; &lt;span class="n"&gt;ls&lt;/span&gt; &lt;span class="n"&gt;date&lt;/span&gt;&lt;span class="o"&gt;+%&lt;/span&gt;&lt;span class="n"&gt;h&lt;/span&gt; &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;wc&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;l&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Install usb adapter and boot raspbmc&lt;/p&gt;
+&lt;p&gt;Start an SSH session with the raspberry pi&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="err"&gt;$&lt;/span&gt; &lt;span class="n"&gt;ssh&lt;/span&gt; &lt;span class="n"&gt;pi&lt;/span&gt;&lt;span class="err"&gt;@&lt;/span&gt;&lt;span class="mf"&gt;192.168.2.211&lt;/span&gt;
+&lt;span class="err"&gt;$&lt;/span&gt; &lt;span class="n"&gt;pi&lt;/span&gt;&lt;span class="err"&gt;@&lt;/span&gt;&lt;span class="mf"&gt;192.168.2.211&lt;/span&gt;&lt;span class="err"&gt;&amp;#39;&lt;/span&gt;&lt;span class="n"&gt;s&lt;/span&gt; &lt;span class="n"&gt;password&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="n"&gt;raspberry&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Check that your adapter was detected using the lsub command&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="n"&gt;pi&lt;/span&gt;&lt;span class="err"&gt;@&lt;/span&gt;&lt;span class="n"&gt;raspbmc&lt;/span&gt;&lt;span class="o"&gt;:~&lt;/span&gt;&lt;span class="err"&gt;$&lt;/span&gt; &lt;span class="n"&gt;lsusb&lt;/span&gt;
+
+&lt;span class="n"&gt;Bus&lt;/span&gt; &lt;span class="mo"&gt;001&lt;/span&gt; &lt;span class="n"&gt;Device&lt;/span&gt; &lt;span class="mo"&gt;002&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="n"&gt;ID&lt;/span&gt; &lt;span class="mo"&gt;0424&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="mi"&gt;9512&lt;/span&gt; &lt;span class="n"&gt;Standard&lt;/span&gt; &lt;span class="n"&gt;Microsystems&lt;/span&gt; &lt;span class="n"&gt;Corp&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt; 
+&lt;span class="n"&gt;Bus&lt;/span&gt; &lt;span class="mo"&gt;001&lt;/span&gt; &lt;span class="n"&gt;Device&lt;/span&gt; &lt;span class="mo"&gt;001&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="n"&gt;ID&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="n"&gt;d6b&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="mo"&gt;0002&lt;/span&gt; &lt;span class="n"&gt;Linux&lt;/span&gt; &lt;span class="n"&gt;Foundation&lt;/span&gt; &lt;span class="mf"&gt;2.0&lt;/span&gt; &lt;span class="n"&gt;root&lt;/span&gt; &lt;span class="n"&gt;hub&lt;/span&gt;
+&lt;span class="n"&gt;Bus&lt;/span&gt; &lt;span class="mo"&gt;001&lt;/span&gt; &lt;span class="n"&gt;Device&lt;/span&gt; &lt;span class="mo"&gt;003&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="n"&gt;ID&lt;/span&gt; &lt;span class="mo"&gt;0424&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="n"&gt;ec00&lt;/span&gt; &lt;span class="n"&gt;Standard&lt;/span&gt; &lt;span class="n"&gt;Microsystems&lt;/span&gt; &lt;span class="n"&gt;Corp&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt; 
+&lt;span class="n"&gt;Bus&lt;/span&gt; &lt;span class="mo"&gt;001&lt;/span&gt; &lt;span class="n"&gt;Device&lt;/span&gt; &lt;span class="mo"&gt;004&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="n"&gt;ID&lt;/span&gt; &lt;span class="mf"&gt;148f&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="mi"&gt;5370&lt;/span&gt; &lt;span class="n"&gt;Ralink&lt;/span&gt; &lt;span class="n"&gt;Technology&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;Corp&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt; &lt;span class="n"&gt;RT5370&lt;/span&gt; &lt;span class="n"&gt;Wireless&lt;/span&gt; &lt;span class="n"&gt;Adapter&lt;/span&gt;
+&lt;span class="n"&gt;Bus&lt;/span&gt; &lt;span class="mo"&gt;001&lt;/span&gt; &lt;span class="n"&gt;Device&lt;/span&gt; &lt;span class="mo"&gt;005&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="n"&gt;ID&lt;/span&gt; &lt;span class="mo"&gt;046&lt;/span&gt;&lt;span class="n"&gt;d&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="n"&gt;c316&lt;/span&gt; &lt;span class="n"&gt;Logitech&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;Inc&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt; &lt;span class="n"&gt;HID&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;Compliant&lt;/span&gt; &lt;span class="n"&gt;Keyboard&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;The firmware-ralink package is needed and can be installed through apt-get&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="n"&gt;pi&lt;/span&gt;&lt;span class="err"&gt;@&lt;/span&gt;&lt;span class="n"&gt;raspbmc&lt;/span&gt;&lt;span class="o"&gt;:~&lt;/span&gt;&lt;span class="err"&gt;$&lt;/span&gt; &lt;span class="n"&gt;sudo&lt;/span&gt; &lt;span class="n"&gt;apt&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;get&lt;/span&gt; &lt;span class="n"&gt;update&lt;/span&gt;
+&lt;span class="n"&gt;pi&lt;/span&gt;&lt;span class="err"&gt;@&lt;/span&gt;&lt;span class="n"&gt;raspbmc&lt;/span&gt;&lt;span class="o"&gt;:~&lt;/span&gt;&lt;span class="err"&gt;$&lt;/span&gt; &lt;span class="n"&gt;sudo&lt;/span&gt; &lt;span class="n"&gt;apt&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;get&lt;/span&gt; &lt;span class="n"&gt;install&lt;/span&gt; &lt;span class="n"&gt;firmware&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;ralink&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Confirm wlan0 exists&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="n"&gt;pi&lt;/span&gt;&lt;span class="err"&gt;@&lt;/span&gt;&lt;span class="n"&gt;raspbmc&lt;/span&gt;&lt;span class="o"&gt;:~&lt;/span&gt;&lt;span class="err"&gt;$&lt;/span&gt; &lt;span class="n"&gt;ifconfig&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h3&gt;Remote control&lt;/h3&gt;
+&lt;h4&gt;Android XBMC remote&lt;/h4&gt;
+&lt;p&gt;The &lt;a href="http://play.google.com/store/apps/details?id=org.xbmc.android.remote&amp;amp;hl=en"&gt;Official XBMC Remote by Team-XBMC&lt;/a&gt; is an android app that turns your phone into full feature remote control for XBMC.  Super useful, easy to set up and free.. this app is great! &lt;/p&gt;
+&lt;h5&gt;Here's how to set things up&lt;/h5&gt;
+&lt;ul&gt;
+&lt;li&gt;Download and install &lt;a href="http://play.google.com/store/apps/details?id=org.xbmc.android.remote&amp;amp;hl=en"&gt;Official XBMC Remote by Team-XBMC&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Start the app on your android device and enter Settings-&amp;gt;Manage XBMC Hosts&lt;/li&gt;
+&lt;li&gt;Add host
+    Name of this instance:
+    Host or IP address:
+    HTTP API port:
+    Username:
+    Password:
+    EventServer port:&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4&gt;IR remote&lt;/h4&gt;
+&lt;p&gt;TBD&lt;/p&gt;
+&lt;p&gt;https://play.google.com/store/apps/details?id=org.leetzone.android.yatsewidgetfree&amp;amp;feature=related_apps
+https://play.google.com/store/apps/details?id=ch.berard.xbmcremotebeta&lt;/p&gt;</summary><category term="raspberrypi"></category><category term="diy"></category><category term="tutorial"></category></entry></feed>
