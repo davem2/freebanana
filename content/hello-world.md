@@ -14,7 +14,7 @@ It's been about 10 years since my previous personal website "Dave's Programming 
 
 Here are some screenshots of my old site in 2002:
 
-<img src="/images/dpp-coding1-0.png" alt="Dave's Programming Page #1" style="width: 44%; vertical-align:top;padding: 0.5em;"/>
+<img src="/images/dpp-coding.png" alt="Dave's Programming Page #1" style="width: 44%; vertical-align:top;padding: 0.5em;"/>
 <img src="/images/dpp-music.png" alt="Dave's Programming Page #1" style="width: 44%; vertical-align:top;padding: 0.5em;"/>
 
 ### Whachutalkinbout?
