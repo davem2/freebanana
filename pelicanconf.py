@@ -41,3 +41,9 @@ DEFAULT_PAGINATION = 10
 #THEME = "sneakyidea"
 
 THEME ="./dblog-theme"
+
+PLUGIN_PATH = '/home/david/temp/pelican-plugins'
+PLUGINS = [
+#    'minify',
+	'assets',
+]

@@ -6,10 +6,16 @@
 
     <title>{% block title %}{{ SITENAME }}{%endblock%}</title>
 
-    <link rel="stylesheet" href="{{ SITEURL }}/theme/css/normalize.css" />
+{% assets filters="cssmin", output="css/style.min.css", "css/normalize.css", "css/foundation.css", "css/style.css", "css/pygments.css" %}
+    <link rel="stylesheet" href="{{ SITEURL }}/{{ ASSET_URL }}">
+{% endassets %}
+	
+<!--
+	<link rel="stylesheet" href="{{ SITEURL }}/theme/css/normalize.css" />
     <link rel="stylesheet" href="{{ SITEURL }}/theme/css/foundation.css" />
     <link rel="stylesheet" href="{{ SITEURL }}/theme/css/style.css" />
     <link rel="stylesheet" href="{{ SITEURL }}/theme/css/pygments.css" />	
+-->
     <script src="{{ SITEURL }}/theme/js/custom.modernizr.js"></script>
 </head>
 
