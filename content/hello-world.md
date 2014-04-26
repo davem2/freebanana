@@ -14,8 +14,8 @@ It's been about 10 years since my previous personal website "Dave's Programming 
 
 Here are some screenshots of my old site in 2002:
 
-<img src="/images/dpp-coding.png" alt="Dave's Programming Page #1" style="width: 44%; vertical-align:top;padding: 0.5em;"/>
-<img src="/images/dpp-music.png" alt="Dave's Programming Page #1" style="width: 44%; vertical-align:top;padding: 0.5em;"/>
+<img src="images/dpp-coding.png" alt="Dave's Programming Page #1" style="width: 44%; vertical-align:top;padding: 0.5em;"/>
+<img src="images/dpp-music.png" alt="Dave's Programming Page #1" style="width: 44%; vertical-align:top;padding: 0.5em;"/>
 
 ### Whachutalkinbout?
 For the most part this site will be a recreation of the old Dave's programming page with a heavy focus on personal projects.  Any articles / tutorial I write will most likely be on programming / computer related things.  Some non-computer related rants and randomness may make it in there as well.  
