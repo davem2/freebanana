@@ -55,16 +55,11 @@
 <div class="row">
 
     <!-- Main Blog Content -->
-    <div class="large-12 columns">
+    <div class="large-9 columns">
     {% block content %}{% endblock %}
     </div>
     <!-- End Main Content -->
 
-</div> <!-- End Main Content and Sidebar -->
-
-
-<!-- Footer -->
-<footer class="large-12 columns">
     <!-- Sidebar -->
     <aside class="large-3 columns">
         <h5 class="sidebar-title">Site</h5>
@@ -78,10 +73,8 @@
             <li><a href="{{ FEED_DOMAIN }}/{{ FEED_RSS }}" rel="alternate">RSS feed</a></li>
             {% endif %}
         </ul>
-    </aside> <!-- End Sidebar -->
 
-    <aside class="large-3 columns">
-       {% if categories %}		
+        {% if categories %}		
         <h5 class="sidebar-title">Categories</h5>
         <ul class="side-nav">
         {% for cat, null in categories %}
@@ -89,10 +82,8 @@
         {% endfor %}   
         </ul>
         {% endif %}
-    </aside> <!-- End Sidebar -->
 
-    <aside class="large-3 columns">
-       {% if LINKS %}
+        {% if LINKS %}
         <h5 class="sidebar-title">Links</h5>
         <ul class="side-nav">
         {% for name, link in LINKS %}
@@ -100,10 +91,8 @@
         {% endfor %}
         </ul>
         {% endif %}
-    </aside> <!-- End Sidebar -->
 		
-    <aside class="large-3 columns">
-       {% if SOCIAL %}
+        {% if SOCIAL %}
         <h5 class="sidebar-title">Social</h5>
         <ul class="side-nav">
         {% for name, link in SOCIAL %}
@@ -111,15 +100,20 @@
         {% endfor %}
         </ul>
         {% endif %}
+
     </aside> <!-- End Sidebar -->
 
+</div> <!-- End Main Content and Sidebar -->
 
- <!--
+
+<!-- Footer -->
+<footer>
+    <div class="large-12 columns">
         <hr />
         <div class="row">
             <div class="large-6 columns">
-				<p>{{ SITENAME }} by {{ AUTHOR }} - Powered by <a href"http://blog.getpelican.com">pelican</a></p> 
+              <!--                  <p>{{ SITENAME }} by {{ AUTHOR }}</p> -->
             </div>
             </div>
- -->
+    </div>
 </footer>
